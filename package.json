@@ -1,0 +1,26 @@
+{
+  "name": "code-identifier",
+  "version": "1.0.0",
+  "description": "stateless code identifier",
+  "main": "index.js",
+  "author": "Tree Xie <vicansocanbico@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "node node_modules/.bin/prettier --write *.js",
+    "lint": "node ./node_modules/.bin/eslint *.js",
+    "jest": "node node_modules/.bin/jest --coverage *.test.js",
+    "test": "npm run format && npm run lint && npm run jest"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "jest": "^22.4.3",
+    "mockdate": "^2.0.2",
+    "prettier": "^1.12.1"
+  },
+  "dependencies": {
+    "keygrip": "^1.0.2"
+  }
+}
