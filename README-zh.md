@@ -22,7 +22,7 @@ const identifier = new CodeIdentifier({
 });
 ```
 
-### getCode
+### genCode
 
 生成验证码
 
