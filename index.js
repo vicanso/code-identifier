@@ -5,10 +5,9 @@ const Keygrip = require('keygrip');
  * @param {number} len code的长度
  */
 function defaultGetCode(len) {
-  const max = 10 ** len;
-  let v = `${Math.floor(Math.random() * max)}`;
-  for (let index = 0; index < len - v.length; index += 1) {
-    v = `0${v}`;
+  let v = '';
+  for (let index = 0; index < len; index += 1) {
+    v += `${Math.floor(Math.random() * 10)}`;
   }
   return v;
 }
