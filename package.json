@@ -5,7 +5,11 @@
   "main": "index.js",
   "author": "Tree Xie <vicansocanbico@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "format": "node node_modules/.bin/prettier --write *.js",
     "lint": "node ./node_modules/.bin/eslint *.js",
     "jest": "node node_modules/.bin/jest --coverage *.test.js",

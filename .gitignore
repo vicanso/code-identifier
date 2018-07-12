@@ -2,3 +2,4 @@ node_modules
 coverage
 assets/api.json
 yarn-error.log
+npm-debug.log
